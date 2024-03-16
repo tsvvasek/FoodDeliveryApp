@@ -14,6 +14,8 @@
 		FA27F75E2BA5995100BC6048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA27F75C2BA5995100BC6048 /* LaunchScreen.storyboard */; };
 		FA27F7682BA5A72C00BC6048 /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = FA27F7672BA5A72C00BC6048 /* Roboto */; };
 		FA27F76B2BA5AA0000BC6048 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F76A2BA5AA0000BC6048 /* UIFontExtension.swift */; };
+		FA27F76D2BA5CEC000BC6048 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F76C2BA5CEC000BC6048 /* UIColorExtension.swift */; };
+		FA27F76F2BA5D22C00BC6048 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27F76E2BA5D22C00BC6048 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FA27F75F2BA5995100BC6048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA27F7672BA5A72C00BC6048 /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Roboto; sourceTree = "<group>"; };
 		FA27F76A2BA5AA0000BC6048 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		FA27F76C2BA5CEC000BC6048 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FA27F76E2BA5D22C00BC6048 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				FA27F7692BA5A9C600BC6048 /* Extensions */,
 				FA27F7662BA5A6E400BC6048 /* Fonts */,
+				FA27F76E2BA5D22C00BC6048 /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FA27F76A2BA5AA0000BC6048 /* UIFontExtension.swift */,
+				FA27F76C2BA5CEC000BC6048 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			files = (
 				FA27F7562BA5995000BC6048 /* ViewController.swift in Sources */,
 				FA27F7522BA5995000BC6048 /* AppDelegate.swift in Sources */,
+				FA27F76D2BA5CEC000BC6048 /* UIColorExtension.swift in Sources */,
+				FA27F76F2BA5D22C00BC6048 /* AppColors.swift in Sources */,
 				FA27F76B2BA5AA0000BC6048 /* UIFontExtension.swift in Sources */,
 				FA27F7542BA5995000BC6048 /* SceneDelegate.swift in Sources */,
 			);
