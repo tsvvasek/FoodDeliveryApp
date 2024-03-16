@@ -14,6 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let fonts = Bundle.main.urls(forResourcesWithExtension: "ttf", subdirectory: "Roboto")
+        fonts?.forEach({ url in
+            var error: Unmanaged<CFError>?
+            CTFontManagerRegisterFontsForURL(url as CFURL, .process, &error)
+            if let error {
+                fatalError(error.takeUnretainedValue().localizedDescription)
+            }
+        })
         return true
     }
 
