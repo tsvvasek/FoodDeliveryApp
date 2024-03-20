@@ -10,7 +10,7 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     override func start() {
-        showOnboardingFlow()
+        showMainFlow()
     }
     
     override func finish() {
@@ -28,6 +28,43 @@ private extension AppCoordinator {
         onboardingCoordinator.start()
     }
     func showMainFlow() {
+        guard let navigationController = navigationController else { return }
+        
+        let homeNavigationController = UINavigationController()
+        let homeCoordinator = HomeCoordinator(type: .home, navigationController: homeNavigationController, finishDeligate: self)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: .init(systemName: "house"), tag: 0)
+        homeCoordinator.start()
+        
+        let orderNavigationController = UINavigationController()
+        let orderCoordinator = OrderCoordinator(type: .order, navigationController: orderNavigationController, finishDeligate: self)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Order", image: .init(systemName: "house"), tag: 1)
+        orderCoordinator.start()
+        
+        let listNavigationController = UINavigationController()
+        let listCoordinator = ListCoordinator(type: .list, navigationController: listNavigationController, finishDeligate: self)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "List", image: .init(systemName: "house"), tag: 2)
+        listCoordinator.start()
+        
+        let profileNavigationController = UINavigationController()
+        let profileCoordinator = ProfileCoordinator(type: .home, navigationController: profileNavigationController, finishDeligate: self)
+        homeNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: .init(systemName: "house"), tag: 3)
+        profileCoordinator.start()
+        
+        addChildCoordinator(homeCoordinator)
+        addChildCoordinator(orderCoordinator)
+        addChildCoordinator(listCoordinator)
+        addChildCoordinator(profileCoordinator)
+        
+        let tubBarControllers = [
+            homeNavigationController,
+            orderNavigationController,
+            listNavigationController,
+            profileNavigationController
+        ]
+        
+        let tabBarController = TabBarController(tabBarControllers: tubBarControllers)
+        
+        navigationController.pushViewController(tabBarController, animated: true)
         
     }
 }
