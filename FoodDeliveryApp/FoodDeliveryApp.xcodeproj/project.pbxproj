@@ -24,6 +24,8 @@
 		FAC2F0202BAB1A920088EF3A /* ListCooredinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F01F2BAB1A920088EF3A /* ListCooredinator.swift */; };
 		FAC2F0222BAB1ACB0088EF3A /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F0212BAB1ACB0088EF3A /* ProfileCoordinator.swift */; };
 		FAC2F0242BAB1B150088EF3A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2F0232BAB1B150088EF3A /* TabBarController.swift */; };
+		FACDF09F2BAC745600EF21BC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF09E2BAC745600EF21BC /* OnboardingViewController.swift */; };
+		FACDF0A12BAC758A00EF21BC /* OnboardingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDF0A02BAC758A00EF21BC /* OnboardingViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		FAC2F01F2BAB1A920088EF3A /* ListCooredinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCooredinator.swift; sourceTree = "<group>"; };
 		FAC2F0212BAB1ACB0088EF3A /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileCoordinator.swift; path = ../../../../../../../../../Applications/ProfileCoordinator.swift; sourceTree = "<group>"; };
 		FAC2F0232BAB1B150088EF3A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FACDF09E2BAC745600EF21BC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		FACDF0A02BAC758A00EF21BC /* OnboardingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		FA27F7502BA5995000BC6048 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				FACDF09C2BAC73CB00EF21BC /* UILayer */,
 				FA0482D12BA88B2A00516DD5 /* NavigationLayer */,
 				FA27F7652BA5A6D000BC6048 /* Resources */,
 				FA27F7512BA5995000BC6048 /* AppDelegate.swift */,
@@ -146,6 +151,23 @@
 				FA27F76C2BA5CEC000BC6048 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FACDF09C2BAC73CB00EF21BC /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				FACDF09D2BAC73F000EF21BC /* Onboarding */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		FACDF09D2BAC73F000EF21BC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				FACDF09E2BAC745600EF21BC /* OnboardingViewController.swift */,
+				FACDF0A02BAC758A00EF21BC /* OnboardingViewPresenter.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,12 +248,14 @@
 				FA27F76F2BA5D22C00BC6048 /* AppColors.swift in Sources */,
 				FA0482D92BA896DC00516DD5 /* OnboardingCoordinator.swift in Sources */,
 				FA0482D72BA8944800516DD5 /* AppCoordinator.swift in Sources */,
+				FACDF09F2BAC745600EF21BC /* OnboardingViewController.swift in Sources */,
 				FAC2F01E2BAB1A5F0088EF3A /* OrderCoordinator.swift in Sources */,
 				FAC2F0222BAB1ACB0088EF3A /* ProfileCoordinator.swift in Sources */,
 				FA27F76B2BA5AA0000BC6048 /* UIFontExtension.swift in Sources */,
 				FAC2F01C2BAB19EF0088EF3A /* HomeCoordinator.swift in Sources */,
 				FAC2F0242BAB1B150088EF3A /* TabBarController.swift in Sources */,
 				FA27F7542BA5995000BC6048 /* SceneDelegate.swift in Sources */,
+				FACDF0A12BAC758A00EF21BC /* OnboardingViewPresenter.swift in Sources */,
 				FA0482D52BA88B6E00516DD5 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
