@@ -37,17 +37,17 @@ private extension AppCoordinator {
         
         let orderNavigationController = UINavigationController()
         let orderCoordinator = OrderCoordinator(type: .order, navigationController: orderNavigationController, finishDeligate: self)
-        homeNavigationController.tabBarItem = UITabBarItem(title: "Order", image: .init(systemName: "house"), tag: 1)
+        orderNavigationController.tabBarItem = UITabBarItem(title: "Order", image: .init(systemName: "house"), tag: 1)
         orderCoordinator.start()
         
         let listNavigationController = UINavigationController()
         let listCoordinator = ListCoordinator(type: .list, navigationController: listNavigationController, finishDeligate: self)
-        homeNavigationController.tabBarItem = UITabBarItem(title: "List", image: .init(systemName: "house"), tag: 2)
+        listNavigationController.tabBarItem = UITabBarItem(title: "List", image: .init(systemName: "house"), tag: 2)
         listCoordinator.start()
         
         let profileNavigationController = UINavigationController()
         let profileCoordinator = ProfileCoordinator(type: .home, navigationController: profileNavigationController, finishDeligate: self)
-        homeNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: .init(systemName: "house"), tag: 3)
+        profileNavigationController.tabBarItem = UITabBarItem(title: "Profile", image: .init(systemName: "house"), tag: 3)
         profileCoordinator.start()
         
         addChildCoordinator(homeCoordinator)
